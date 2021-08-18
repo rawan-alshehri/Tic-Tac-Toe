@@ -1,5 +1,6 @@
 # Tic Tac Toe Game
 Tic-Tac-Toe involves looking ahead and trying to figure out what the person playing against you might do next.
+### [LIVE DEMO](https://rawan-alshehri.github.io/Tic-Tac-Toe/index.html)
 
 ![Game](screenshot.png)
 
