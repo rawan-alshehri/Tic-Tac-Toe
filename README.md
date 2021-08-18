@@ -1,5 +1,6 @@
 # Tic Tac Toe Game
 Tic-Tac-Toe involves looking ahead and trying to figure out what the person playing against you might do next.
+![Game](screenshot.png)
 ### Rules for TIC-TAC-TOE:
 1. The game is played on a grid that's 3 squares by 3 squares.
 2. You are X, your friend (or the computer in this case) is O. Players take turns putting their marks in empty squares.
