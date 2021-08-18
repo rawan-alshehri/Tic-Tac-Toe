@@ -1,0 +1,176 @@
+body {
+  /* background-color: rgb(225, 244, 255); */
+  margin: 0;
+  background: linear-gradient(-40deg, #ffffff, #f1f1b8, #f0aee6, #9fbdf7);
+  background-size: 400% 400%;
+}
+
+section {
+  text-align: center;
+}
+.title {
+  font-family: "Pacifico", cursive;
+  font-size: 70px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: rgb(248, 87, 114);
+}
+#sub-text {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 15px;
+  color: rgb(70, 70, 73);
+  text-align: center;
+}
+.status {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 25px;
+  color: rgb(70, 70, 73);
+}
+
+.results p {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 15px;
+  margin-left: 60px;
+  margin-right: 60px;
+  color: rgb(70, 70, 73);
+  display: inline-block;
+  vertical-align: top;
+}
+.results-labels p {
+  font-family: "JetBrains Mono", monospace;
+  margin-left: 40px;
+  margin-right: 40px;
+  font-size: 15px;
+  color: rgb(70, 70, 73);
+  display: inline-block;
+  vertical-align: top;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  width: 306px;
+  margin: 40px auto;
+}
+/* ----------Cells Style---------- */
+.cell {
+  font-family: "JetBrains Mono", monospace;
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 0 0 1px rgb(70, 70, 73);
+  border: 1px solid rgb(70, 70, 73);
+  cursor: pointer;
+  line-height: 100px;
+  font-size: 70px;
+  color: rgb(248, 87, 114);
+  border-radius: 10px;
+}
+/* ----------Restart Game Button Style---------- */
+.restart {
+  padding: 10px 20px;
+  border: 1px solid rgb(255, 105, 130);
+  border-radius: 45px;
+  background-color: rgb(245, 165, 165);
+  color: rgb(240, 51, 196);
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+.restart:hover {
+  background-color: rgb(255, 105, 130);
+}
+
+.restart:active {
+  background-color: rgb(255, 105, 130);
+}
+
+.restart:focus {
+  outline: none;
+}
+/* ----------Footer Style---------- */
+.footer {
+  font-family: "Pacifico", cursive;
+  font-size: 15px;
+  color: rgb(70, 70, 73);
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* ----------Modal Style---------- */
+
+.modal-background {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  border-radius: 1em;
+  background-color: rgba(245, 165, 165, 0.89);
+  margin: auto;
+  margin-top: 80px;
+  padding: 40px;
+  width: 500px;
+  height: 250px;
+}
+.modal-title {
+  font-family: "JetBrains Mono", monospace;
+  color: rgb(248, 69, 99);
+  font-size: 25px;
+  text-align: center;
+}
+.modal-text{
+  font-family: "JetBrains Mono", monospace;
+  color: rgb(54, 53, 53);
+  font-size: 20px;
+  text-align: center;
+}
+.start-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: bolder;
+  border-radius: 2em;
+  padding: 0.5em 1.2em;
+  background-color: rgb(144, 102, 223);
+  border: medium;
+  margin-left: 40%;
+  color: rgb(54, 53, 53);
+}
+.start-btn:hover,
+.start-btn:focus {
+  background-color: rgb(255, 105, 130);
+  color: rgb(243, 237, 237);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-form {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+.choice1 {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+  font-family: "JetBrains Mono", monospace;
+  color: rgb(54, 53, 53);
+  font-size: 15px;
+  text-align: center;
+}
+.choice2 {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  font-family: "JetBrains Mono", monospace;
+  color: rgb(54, 53, 53);
+  font-size: 15px;
+  text-align: center;
+}

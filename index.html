@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <title>Tic Tac Toe</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="displayModal()">
+    <!-----------------Audios-------------------->
+    <audio id="clickAudio" src="https://www.soundjay.com/button/sounds/button-30.mp3"></audio>
+    <audio id="winAudio" src="https://www.soundjay.com/misc/sounds/magic-chime-02.mp3"> </audio>
+    <audio id="restartAudio" src="https://www.soundjay.com/button/sounds/button-49.mp3"> </audio>
+
+    <!----------------- Modal -------------------->
+    <div id="modal" class="modal-background">
+      <div class="modal-content">
+        <h1 class="modal-title">Welcome to the game of Tic Tac Toe!</h1>
+        <h2 class="modal-text">Who do you want to play against?</h2>
+        <form class="modal-form">
+          <div class="choice1">
+            <input id="computer-pl" name="choice" type="radio" />
+            <label for="computer-pl">Computer</label>
+          </div>
+          <div class="choice2">
+            <input id="another-pl" name="choice" type="radio" />
+            <label for="another-pl">Another Player</label>
+          </div>
+        </form>
+        <button id="start-btn" class="start-btn">Start Game</button>
+      </div>
+    </div>
+   <!----------------- Game Content-------------------->
+    <section>
+      <h1 class="title">Tic Tac Toe</h1>
+      <h2 class="status"></h2>
+      <div class="results-labels">
+        <p id="p1-label" class="p1">Player 1</p>
+        <p id="tie" class="tie">Tie</p>
+        <p id="p2-label" class="p2">Player 2</p>
+      </div>
+      <div class="results">
+        <p class="p1-results">0</p>
+        <p class="tie-results">0</p>
+        <p class="p2-results">0</p>
+      </div>
+      <p id="sub-text"></p>
+      <div class="container">
+        <div id="0" cell-index="0" class="cell"></div>
+        <div id="1" cell-index="1" class="cell"></div>
+        <div id="2" cell-index="2" class="cell"></div>
+        <div id="3" cell-index="3" class="cell"></div>
+        <div id="4" cell-index="4" class="cell"></div>
+        <div id="5" cell-index="5" class="cell"></div>
+        <div id="6" cell-index="6" class="cell"></div>
+        <div id="7" cell-index="7" class="cell"></div>
+        <div id="8" cell-index="8" class="cell"></div>
+      </div>
+      <button class="restart">Restart Game</button>
+    </section>
+     <!----------------- Footer -------------------->
+    <div class="footer">
+      Coded with
+      <span style="color: rgb(243, 49, 49)">&#9829;</span> by Rawan Alshehri
+    </div>
+    <script src="game.js"></script>
+  </body>
+</html>
